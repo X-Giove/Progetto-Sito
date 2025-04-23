@@ -1,0 +1,79 @@
+.immagineHero{
+    background-image: url("pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    border-radius: 20px;
+}
+
+.textShadow{
+    text-shadow: -2px 2px 3px #000000;
+}
+.boxShadow{
+    box-shadow: -2px 2px 3px #000000;
+}
+.imgContainer{
+    position: relative;
+    min-height: 300px;
+}
+.imgCaneDietro{
+    position: absolute;
+    top: 0; right: 0;
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+
+.imgCaneDietro:hover {
+    z-index: 4;
+}
+
+.imgCaneDavanti{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 45%;
+    height: 70%;
+    object-fit: cover;
+    z-index: 3;
+}
+.imgCane1{
+    position: absolute;
+    top: 30px; right: 0;
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    z-index: 3;
+}
+.imgCane2{
+    position: absolute;
+    bottom: 0; left: 50px;
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 4;
+}
+.imgCane3{
+    position: absolute;
+    top: 0; left: 0;
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 5;
+}
+.imgCane2:hover {
+    z-index: 8;
+}
+.imgCane1:hover {
+    z-index: 8;
+}
+.imgGrill{
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    object-fit: cover;
+}
+.backGround{
+    background-color: #000000;
+}
