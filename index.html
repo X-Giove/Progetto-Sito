@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-<head>
-    <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
-
-<body>
+  <body>
     <!--QUA METTO LA BARRA DI NAVIGAZIONE-->
-<header class="nav-pos">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="nav-pos">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">DA OMBRA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,211 +39,411 @@
                 <a class="nav-link" aria-current="page" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#ChiSiamo">Chi Siamo</a>
+                <a class="nav-link" aria-current="page" href="#ChiSiamo"
+                  >Chi Siamo</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#IlCuoco">Il Cuoco</a>
+                <a class="nav-link" aria-current="page" href="#IlCuoco"
+                  >Il Cuoco</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Prenota">Prenota</a>
+                <a class="nav-link" aria-current="page" href="#Prenota"
+                  >Prenota</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-</header>
-    <section id="Home"> <!--Sezione HERO-->
-        <div class="container mt-4">
-            <div class="row immagineHero boxShadow">
-                <div class="col-12 text-center text-white my-auto textShadow">
-                    <p><strong>L'UNICA. LA SOLA.</strong></p>
-                    <h1>PIZZERIA DA OMBRA</h1>
-                    <p>Una pizza fatta da cani</p>
-                    <button type="button" class="btn btn-light"
-                        style="--bs-btn-padding-y: 7px; --bs-btn-padding-x: 30px; --bs-btn-font-size: .75rem;">
-                        Vedi di più</button>
-                </div>
-            </div>
+    </header>
+    <section id="Home">
+      <!--Sezione HERO-->
+      <div class="container mt-4">
+        <div class="row immagineHero boxShadow">
+          <div class="col-12 text-center text-white my-auto textShadow">
+            <p><strong>L'UNICA. LA SOLA.</strong></p>
+            <h1>PIZZERIA DA OMBRA</h1>
+            <p>Una pizza fatta da cani</p>
+            <button
+              type="button"
+              class="btn btn-light"
+              style="
+                --bs-btn-padding-y: 7px;
+                --bs-btn-padding-x: 30px;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Vedi di più
+            </button>
+          </div>
         </div>
+      </div>
     </section>
-    <section> <!--Sezione 2-->
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h4 id="IlCuoco">IL CUOCO</h4>
-                    <h3>OMBRA, IL NOSTRO CUOCO A</br> 4 ZAMPE. 4 MANI LAVORANO</br>MEGLIO DI 2</h3>
-                    <p>Ombra è un simpatico cane dall'energia contagiosa e un amore per la pizza che lo rende un pizzaiolo peloso impeccabile. Con il suo fiuto affinato e la coda scodinzolante, è sempre pronto a creare deliziose prelibatezze croccanti, diffondendo gioia e bontà in ogni fetta.</p>
-                    <div class="container ">
-                        <div class="row">
-                            <div class="col-4 col-lg-6">
-                                <div>CODE CONTENTE</div>
-                                <div>+2.531</div>
-                            </div>
-                            <div class="col-4 col-lg-6">
-                                <div>FATTURATO</div>
-                                <div>+125 MILIONI</div>
-                            </div>
-                            <div class="col-4 col-lg-6 align-left mt-4">
-                                <button type="button" class="btn btn-white"
-                                    style="--bs-btn-padding-y: 7px; --bs-btn-padding-x: 13px; --bs-btn-font-size: .75rem;">
-                                    Vedi di più</button>
-                            </div>
-                        </div>
-                    </div> 
+    <section>
+      <!--Sezione 2-->
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2 id="IlCuoco" class="txtMedio">IL CUOCO</h2>
+            <h3 class="txtGrande">
+              OMBRA, IL NOSTRO CUOCO A<br />
+              4 ZAMPE. 4 MANI LAVORANO<br />MEGLIO DI 2
+            </h3>
+            <p>
+              Ombra è un simpatico cane dall'energia contagiosa e un amore per
+              la pizza che lo rende un pizzaiolo peloso impeccabile. Con il suo
+              fiuto affinato e la coda scodinzolante, è sempre pronto a creare
+              deliziose prelibatezze croccanti, diffondendo gioia e bontà in
+              ogni fetta.
+            </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-4 col-lg-6">
+                  <div class="txtMedio">CODE CONTENTE</div>
+                  <div class="txtMedio">+2.531</div>
                 </div>
-                <div class="col-12 col-lg-6 imgContainer">
-                    <img class="imgCaneDietro" src="ombra-1.png">
-                    <img class="imgCaneDavanti" src="ombra-2.png">
+                <div class="col-4 col-lg-6">
+                  <div class="txtMedio">FATTURATO</div>
+                  <div class="txtMedio">+125 MILIONI</div>
                 </div>
+                <div class="col-4 col-lg-6 align-left mt-4">
+                  <button
+                    type="button"
+                    class="btn btn-white"
+                    style="
+                      --bs-btn-padding-y: 7px;
+                      --bs-btn-padding-x: 13px;
+                      --bs-btn-font-size: 0.75rem;
+                    "
+                  >
+                    Vedi di più
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-lg-6 imgContainer">
+            <img class="imgCaneDietro" src="ombra-1.png" />
+            <img class="imgCaneDavanti" src="ombra-2.png" />
+          </div>
         </div>
+      </div>
     </section>
     <section id="ChiSiamo">
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-12 col-lg-6 imgContainer order-2 order-md-1">
-                    <img class="imgCane1" src="cane-1.avif">
-                    <img class="imgCane2" src="cane-2.jpeg">
-                    
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-md-2">
-                    <h3>LE NOSTRE PIZZE</h3>
-                    <h4>CI PIACE LA COTTURA A DENTE CANINO. PROPONIAMO 3 PIZZE MA FATTE CON AMORE</h4>
-                    <p>Nella pizzeria canina di Ombra, le tre specialità sono un trionfo di gusti e aromi unici.</p>
-                    <ul>
-                        <li>La "Zampa Margherita" delizia con la freschezza della mozzarella e il profumo del basilico</li>
-                        <li>La "Crosta Carnivora" bufalina con un tripudio di salumi selezionati</li>
-                        <li>la "Pasticcio di Pollo" avvolge i palati con il sapore succulento del pollo e una cremosa salsa barbecue.</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-lg-6 imgContainer order-2 order-md-1">
+            <img class="imgCane1" src="cane-1.avif" />
+            <img class="imgCane2" src="cane-2.jpeg" />
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-md-2">
+            <h3 class="txtMedio">LE NOSTRE PIZZE</h3>
+            <h2 class="txtGrande">
+              CI PIACE LA COTTURA A DENTE CANINO. PROPONIAMO 3 PIZZE MA FATTE
+              CON AMORE
+            </h2>
+            <p>
+              Nella pizzeria canina di Ombra, le tre specialità sono un trionfo
+              di gusti e aromi unici.
+            </p>
+            <ul>
+              <li>
+                La "Zampa Margherita" delizia con la freschezza della mozzarella
+                e il profumo del basilico
+              </li>
+              <li>
+                La "Crosta Carnivora" bufalina con un tripudio di salumi
+                selezionati
+              </li>
+              <li>
+                la "Pasticcio di Pollo" avvolge i palati con il sapore
+                succulento del pollo e una cremosa salsa barbecue.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
     <section id="Prenota" class="backGround mt-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 text-center mt-5 text-white">
-                    <h5>SODDISFATTI DI NOI</h5>
-                    <h3>VI SFIDIAMO A PROPORCI UN PROGETTO CHE NON SIAMO IN GRADO DI FARE</h3>
-                    <p>Caffetteria al cocktail lab, dal coffee brewing all’abbinamento cibo e vino.</p>
-                    <p>Avvio e affianco imprenditori emergenti nel mondo della caffetteria e del bartending.</p>
-                    <button type="button" class="btn"
-                                    style="--bs-btn-padding-y: 7px; --bs-btn-padding-x: 13px; --bs-btn-font-size: .75rem;">
-                                    Vedi di più</button>
-                </div>
-                <div class="col-8 my-5">
-                    <div class="row imgContainer">
-                        <div class="col-4"><img class="imgGrill"
-                                src="1.png"></div>
-                        <div class="col-4"><img class="imgGrill"
-                                src="2.png"></div>
-                        <div class="col-4"><img class="imgGrill"
-                                src="3.png"></div>
-                        <div class="col-4"><img class="imgGrill"
-                                src="4.png"></div>
-                        <div class="col-4"><img class="imgGrill"
-                                src="5.png"></div>
-                        <div class="col-4"><img class="imgGrill"
-                                src="6.png"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 text-left mt-5 text-white">
+            <h3 class="txtMedio">SODDISFATTI DI NOI</h3>
+            <h2 class="txtGrande">
+              VI SFIDIAMO A PROPORCI UN PROGETTO CHE NON SIAMO IN GRADO DI FARE
+            </h2>
+            <p>
+              Caffetteria al cocktail lab, dal coffee brewing all’abbinamento
+              cibo e vino.
+            </p>
+            <p>
+              Avvio e affianco imprenditori emergenti nel mondo della
+              caffetteria e del bartending.
+            </p>
+            <button
+              type="button"
+              class="btn"
+              style="
+                --bs-btn-padding-y: 7px;
+                --bs-btn-padding-x: 13px;
+                --bs-btn-font-size: 0.75rem;
+              "
+            >
+              Vedi di più
+            </button>
+          </div>
+          <div class="col-8 my-5">
+            <div class="row imgContainer w-100">
+              <div class="col-4">
+                <img class="imgGrill img-fluid" src="1.png" />
+              </div>
+              <div class="col-4">
+                <img class="imgGrill img-fluid" src="2.png" />
+              </div>
+              <div class="col-4">
+                <img class="imgGrill img-fluid" src="3.png" />
+              </div>
+              <div class="col-4">
+                <img class="imgGrill img-fluid" src="4.png" />
+              </div>
+              <div class="col-4">
+                <img class="imgGrill img-fluid" src="5.png" />
+              </div>
+              <div class="col-4">
+                <img class="imgGrill img-fluid" src="6.png" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="mt-5">
-        <div class="container">
-            <div class="row my-5 py-5">
-                <div class="col-12"><h3>QUESTA è LA GALLERIA</h3></div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
-                        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"></div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
-                        src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="></div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
-                        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"></div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
-                        src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="></div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
-                        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"></div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
-                        src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="></div>
-            </div>
+      <div class="container">
+        <div class="row my-5 py-5">
+          <div class="col-12">
+            <h2 class="txtGrande">QUESTA è LA GALLERIA</h2>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <img
+              class="galleriaIMG"
+              src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <img
+              class="galleriaIMG"
+              src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <img
+              class="galleriaIMG"
+              src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <img
+              class="galleriaIMG"
+              src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <img
+              class="galleriaIMG"
+              src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <img
+              class="galleriaIMG"
+              src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="
+            />
+          </div>
         </div>
+      </div>
     </section>
     <section class="my-5 py-5">
-        <div class="container my-5 py-5">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3 class="txtGrande">AGUZZA I DENTI 
-                        <br> È L'ORA DELLA PAPPA</h3>
-                    <div class="line"></div>
-                    <h4 class="dimTXT">Ombra Tonina</h4>
-                </div>
-            </div>
+      <!--Sezione Citazione-->
+      <div class="container my-5 py-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="txtGrande2">
+              AGUZZA I DENTI <br />
+              È L'ORA DELLA PAPPA
+            </h3>
+            <div class="line"></div>
+            <h4 class="dimTXT">Ombra Tonina</h4>
+          </div>
         </div>
+      </div>
     </section>
     <section class="backGround">
-        <div class="container my-5 py-5">
-            <div class="row">
-                <div class="col-12 txtForm">
-                    <h3 class="">RISERVA PER IL BRANCO</h3>
-                    <h4 class="">PRENOTA UNA CIOTOLA</h4>
-                    <p>Avvio e affianco imprenditori emergenti nel mondo della caffetteria e del bartending.</p>
+      <!--Sezione prenotazione-->
+      <div class="container">
+        <div class="row input-text">
+          <div class="col-12 col-md-6 col-lg-8">
+            <div class="txtForm">
+              <h4 class="txtMedio">RISERVA PER IL BRANCO</h4>
+              <h3 class="txtGrande">PRENOTA UNA CIOTOLA</h3>
+              <p>
+                Avvio e affianco imprenditori emergenti nel mondo della
+                caffetteria e del bartending.
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div>NOME</div>
+                  <input
+                    id="name"
+                    class="input-text"
+                    type="text"
+                    placeholder="Mario"
+                  />
                 </div>
-            </div>
-        </div>
-        <div class="row txtForm">
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div>NOME</div>
-                <input id="name" class="input-text" type="text" placeholder="Mario">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div>COGNOME</div>
-                <input id="surname" class="input-text" type="text" placeholder="Rossi">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div>CELLULARE</div>
-                <input id="mobile" class="input-text" type="text" placeholder="113">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div>IN QUANTI</div>
-                <input id="people" class="input-text" type="text" placeholder="Minimo 10">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div>GIORNO</div>
-                <input id="date" class="input-text" type="text" placeholder="Siamo chiusi">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div>TURNO</div>
-                <input id="turn" class="input-text" type="text" placeholder="Tanto non entri">
-            </div>
-            <div class="col-12">
-                <div>MESSAGGIO</div>
-                <textarea id="message" placeholder="Messaggio che ignoreremo" name=""></textarea>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div>COGNOME</div>
+                  <input
+                    id="surname"
+                    class="input-text"
+                    type="text"
+                    placeholder="Rossi"
+                  />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div>CELLULARE</div>
+                  <input
+                    id="mobile"
+                    class="input-text"
+                    type="text"
+                    placeholder="113"
+                  />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div>IN QUANTI</div>
+                  <input
+                    id="people"
+                    class="input-text"
+                    type="text"
+                    placeholder="Minimo 10"
+                  />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div>GIORNO</div>
+                  <input
+                    id="date"
+                    class="input-text"
+                    type="text"
+                    placeholder="Siamo chiusi"
+                  />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                  <div>TURNO</div>
+                  <input
+                    id="turn"
+                    class="input-text"
+                    type="text"
+                    placeholder="Tanto non entri"
+                  />
+                </div>
+                <div class="col-12">
+                  <div>MESSAGGIO</div>
+                  <textarea
+                    id="message"
+                    placeholder="Messaggio che ignoreremo"
+                    name=""
+                  ></textarea>
 
-                <label for="" class="mt-4">
-                    <input type="checkbox" name="policy" id="">
-                    Dichiaro di aver letto e accettato la Privacy Policy del sito.
-                </label>
-            </div>
-            <div class="col-12">
-            </div>
-            <div class="col-12">
-                <button type="button" onclick="formSubmit()" class="btn mt-4">
+                  <label for="" class="mt-4">
+                    <input type="checkbox" name="policy" id="" />
+                    Dichiaro di aver letto e accettato la Privacy Policy del
+                    sito.
+                  </label>
+                </div>
+
+                <div class="col-12 mb-5">
+                  <button type="button" onclick="formSubmit()" class="btn mt-4">
                     <span class="d-block btn-text">INVIA</span>
-                </button>
+                  </button>
 
-                <div id="loading" class="alert alert-warning mt-3 d-none" role="alert">
+                  <div
+                    id="loading"
+                    class="alert alert-warning mt-3 d-none"
+                    role="alert"
+                  >
                     Attendere prego...
-                </div>
-                <div id="error" class="alert alert-danger mt-3 d-none" role="alert">
+                  </div>
+                  <div
+                    id="error"
+                    class="alert alert-danger mt-3 d-none"
+                    role="alert"
+                  >
                     Si è verificato un errore
-                </div>
-                <div id="success" class="alert alert-success mt-3 d-none" role="alert">
+                  </div>
+                  <div
+                    id="success"
+                    class="alert alert-success mt-3 d-none"
+                    role="alert"
+                  >
                     Grazie! La tua ciotola ti aspetta! Bauuu
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.2691311523017!2d12.647796976442892!3d42.
+              88826820156712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e8e4f3607c5f1%3A0xf1e70441b5f8f16a!2s
+              Tordoni%20Bar%20Tabaccheria!5e0!3m2!1sit!2sit!4v1745589129615!5m2!1sit!2sit"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
+      </div>
     </section>
-</body>
-
+    <footer class="footerBG">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5>NOME DEL BRAND</h5>
+            <p>
+              Avvio e affianco imprenditori emergenti nel mondo della
+              caffetteria e del bartending.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5>CONTATTI</h5>
+            <p>
+              Prenota Al Cell: +39 113<br />
+              Prima Mail: email@example.com<br />
+              Se Stai Male Cell: +39 118<br />
+              Seconda Mail: email@example.com
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5>SOCIAL</h5>
+            <p>
+              Instagram:<br />
+              Facebook:<br />
+              Linkedin:
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5>CREDITS</h5>
+            <p>
+              Nome del Brand © 2024 <br />
+              Ricopiato con Ctrl+C da Giove
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
