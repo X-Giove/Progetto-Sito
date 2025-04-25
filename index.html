@@ -7,10 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section> <!--Sezione HERO-->
+    <!--QUA METTO LA BARRA DI NAVIGAZIONE-->
+<header class="nav-pos">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">DA OMBRA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#ChiSiamo">Chi Siamo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#IlCuoco">Il Cuoco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Prenota">Prenota</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+    <section id="Home"> <!--Sezione HERO-->
         <div class="container mt-4">
             <div class="row immagineHero boxShadow">
                 <div class="col-12 text-center text-white my-auto textShadow">
@@ -28,11 +56,9 @@
         <div class="container mt-4">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <h2>IL CUOCO</h2>
+                    <h4 id="IlCuoco">IL CUOCO</h4>
                     <h3>OMBRA, IL NOSTRO CUOCO A</br> 4 ZAMPE. 4 MANI LAVORANO</br>MEGLIO DI 2</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur voluptate sed asperiores
-                        quasi soluta unde in mollitia sint accusamus cum perspiciatis quibusdam vero ab aliquid fugit,
-                        deleniti enim temporibus. Ducimus!</p>
+                    <p>Ombra è un simpatico cane dall'energia contagiosa e un amore per la pizza che lo rende un pizzaiolo peloso impeccabile. Con il suo fiuto affinato e la coda scodinzolante, è sempre pronto a creare deliziose prelibatezze croccanti, diffondendo gioia e bontà in ogni fetta.</p>
                     <div class="container ">
                         <div class="row">
                             <div class="col-4 col-lg-6">
@@ -52,55 +78,154 @@
                     </div> 
                 </div>
                 <div class="col-12 col-lg-6 imgContainer">
-                    <img class="imgCaneDietro" src="cane2.jpg">
-                    <img class="imgCaneDavanti" src="cane1.jpg">
+                    <img class="imgCaneDietro" src="ombra-1.png">
+                    <img class="imgCaneDavanti" src="ombra-2.png">
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="ChiSiamo">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 col-lg-6 imgContainer order-2 order-md-1">
-                    <img class="imgCane1" src="cane2.1.webp">
-                    <img class="imgCane2" src="cane2.2.webp">
-                    <img class="imgCane3" src="cane2.3.jpg">
+                    <img class="imgCane1" src="cane-1.avif">
+                    <img class="imgCane2" src="cane-2.jpeg">
+                    
                 </div>
                 <div class="col-12 col-lg-6 order-1 order-md-2">
-                    <h3>Titolo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus facilis quod, laudantium
-                        sequi
-                        saepe architecto quibusdam facere sint repudiandae unde amet quidem maxime nulla accusantium
-                        minus,
-                        recusandae at eaque hic.</p>
+                    <h3>LE NOSTRE PIZZE</h3>
+                    <h4>CI PIACE LA COTTURA A DENTE CANINO. PROPONIAMO 3 PIZZE MA FATTE CON AMORE</h4>
+                    <p>Nella pizzeria canina di Ombra, le tre specialità sono un trionfo di gusti e aromi unici.</p>
+                    <ul>
+                        <li>La "Zampa Margherita" delizia con la freschezza della mozzarella e il profumo del basilico</li>
+                        <li>La "Crosta Carnivora" bufalina con un tripudio di salumi selezionati</li>
+                        <li>la "Pasticcio di Pollo" avvolge i palati con il sapore succulento del pollo e una cremosa salsa barbecue.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="backGround mt-3">
+    <section id="Prenota" class="backGround mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-4 text-center mt-5 text-white">
-                    <h2>titolino</h2>
-                    <h3>Testo grande</h3>
-                    <p>Paragrafo sottostante</p>
-                    <p>Paragrafo ancor più sottostante</p>
+                    <h5>SODDISFATTI DI NOI</h5>
+                    <h3>VI SFIDIAMO A PROPORCI UN PROGETTO CHE NON SIAMO IN GRADO DI FARE</h3>
+                    <p>Caffetteria al cocktail lab, dal coffee brewing all’abbinamento cibo e vino.</p>
+                    <p>Avvio e affianco imprenditori emergenti nel mondo della caffetteria e del bartending.</p>
+                    <button type="button" class="btn"
+                                    style="--bs-btn-padding-y: 7px; --bs-btn-padding-x: 13px; --bs-btn-font-size: .75rem;">
+                                    Vedi di più</button>
                 </div>
                 <div class="col-8 my-5">
                     <div class="row imgContainer">
                         <div class="col-4"><img class="imgGrill"
-                                src="https://cdn-icons-png.freepik.com/256/11349/11349352.png"></div>
+                                src="1.png"></div>
                         <div class="col-4"><img class="imgGrill"
-                                src="https://cdn-icons-png.freepik.com/256/11349/11349352.png"></div>
+                                src="2.png"></div>
                         <div class="col-4"><img class="imgGrill"
-                                src="https://cdn-icons-png.freepik.com/256/11349/11349352.png"></div>
+                                src="3.png"></div>
                         <div class="col-4"><img class="imgGrill"
-                                src="https://cdn-icons-png.freepik.com/256/11349/11349352.png"></div>
+                                src="4.png"></div>
                         <div class="col-4"><img class="imgGrill"
-                                src="https://cdn-icons-png.freepik.com/256/11349/11349352.png"></div>
+                                src="5.png"></div>
                         <div class="col-4"><img class="imgGrill"
-                                src="https://cdn-icons-png.freepik.com/256/11349/11349352.png"></div>
+                                src="6.png"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row my-5 py-5">
+                <div class="col-12"><h3>QUESTA è LA GALLERIA</h3></div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
+                        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"></div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
+                        src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="></div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
+                        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"></div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
+                        src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="></div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
+                        src="https://www.marcobianchi.blog/wp-content/uploads/2023/01/pizza-scaled.jpg"></div>
+                <div class="col-12 col-md-6 col-lg-4 mt-3"><img class="galleriaIMG"
+                        src="https://media.istockphoto.com/id/173574712/it/foto/golden-retriever-chef.jpg?s=612x612&w=0&k=20&c=Bkq8MwAyTYIKiXrmB6LaE2JGGp_o-Ae4LfpKu2Zej8Y="></div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5 py-5">
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="txtGrande">AGUZZA I DENTI 
+                        <br> È L'ORA DELLA PAPPA</h3>
+                    <div class="line"></div>
+                    <h4 class="dimTXT">Ombra Tonina</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="backGround">
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-12 txtForm">
+                    <h3 class="">RISERVA PER IL BRANCO</h3>
+                    <h4 class="">PRENOTA UNA CIOTOLA</h4>
+                    <p>Avvio e affianco imprenditori emergenti nel mondo della caffetteria e del bartending.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row txtForm">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div>NOME</div>
+                <input id="name" class="input-text" type="text" placeholder="Mario">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div>COGNOME</div>
+                <input id="surname" class="input-text" type="text" placeholder="Rossi">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div>CELLULARE</div>
+                <input id="mobile" class="input-text" type="text" placeholder="113">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div>IN QUANTI</div>
+                <input id="people" class="input-text" type="text" placeholder="Minimo 10">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div>GIORNO</div>
+                <input id="date" class="input-text" type="text" placeholder="Siamo chiusi">
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <div>TURNO</div>
+                <input id="turn" class="input-text" type="text" placeholder="Tanto non entri">
+            </div>
+            <div class="col-12">
+                <div>MESSAGGIO</div>
+                <textarea id="message" placeholder="Messaggio che ignoreremo" name=""></textarea>
+
+                <label for="" class="mt-4">
+                    <input type="checkbox" name="policy" id="">
+                    Dichiaro di aver letto e accettato la Privacy Policy del sito.
+                </label>
+            </div>
+            <div class="col-12">
+            </div>
+            <div class="col-12">
+                <button type="button" onclick="formSubmit()" class="btn mt-4">
+                    <span class="d-block btn-text">INVIA</span>
+                </button>
+
+                <div id="loading" class="alert alert-warning mt-3 d-none" role="alert">
+                    Attendere prego...
+                </div>
+                <div id="error" class="alert alert-danger mt-3 d-none" role="alert">
+                    Si è verificato un errore
+                </div>
+                <div id="success" class="alert alert-success mt-3 d-none" role="alert">
+                    Grazie! La tua ciotola ti aspetta! Bauuu
                 </div>
             </div>
         </div>
