@@ -14,30 +14,35 @@
 }
 .imgContainer {
   position: relative;
-  min-height: 300px;
+  min-height: 500px;
 }
 .imgCaneGrande {
   position: absolute;
   top: 0;
   right: 0;
   width: 80%;
-  height: 60%;
+  height: 90% !important;
   object-fit: cover;
   z-index: 2;
-}
-.imgCaneGrande:hover {
-  z-index: 4;
 }
 .imgCanePiccola {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 45%;
-  height: 70%;
+  max-width: 300px !important;
+  max-height: 500px;
+  min-height: 400px;
   object-fit: cover;
   z-index: 3;
 }
-
+.imgCaneGrande:hover {
+  z-index: 4;
+}
+.img-block {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .imgGrill {
   object-fit: contain;
   width: 100%;
@@ -95,9 +100,9 @@
   background-color: black;
   color: white;
 }
-.txtGrande{
-    font-size: 40px;
+.txtGrande {
+  font-size: 40px;
 }
-.txtMedio{
-    font-size: 25px;
+.txtMedio {
+  font-size: 25px;
 }
