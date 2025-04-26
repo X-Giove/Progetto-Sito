@@ -16,7 +16,7 @@
   position: relative;
   min-height: 300px;
 }
-.imgCaneDietro {
+.imgCaneGrande {
   position: absolute;
   top: 0;
   right: 0;
@@ -25,10 +25,10 @@
   object-fit: cover;
   z-index: 2;
 }
-.imgCaneDietro:hover {
+.imgCaneGrande:hover {
   z-index: 4;
 }
-.imgCaneDavanti {
+.imgCanePiccola {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -37,39 +37,7 @@
   object-fit: cover;
   z-index: 3;
 }
-.imgCane1 {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  width: 80%;
-  height: 70%;
-  object-fit: cover;
-  z-index: 3;
-}
-.imgCane2 {
-  position: absolute;
-  bottom: 0;
-  left: 50px;
-  width: 70%;
-  height: 80%;
-  object-fit: cover;
-  z-index: 4;
-}
-.imgCane3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 80%;
-  object-fit: cover;
-  z-index: 5;
-}
-.imgCane2:hover {
-  z-index: 8;
-}
-.imgCane1:hover {
-  z-index: 8;
-}
+
 .imgGrill {
   object-fit: contain;
   width: 100%;
