@@ -14,6 +14,7 @@
     <meta property="og:url" content="https://progetto-sito.vercel.app" />
     <meta property="og:type" content="website" />
     <!--tag social fine-->
+    <title>Pizzeria Da Ombra</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -46,7 +47,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bar">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#Home">Home</a>
               </li>
@@ -80,11 +81,11 @@
     </header>
     <section id="Home">
       <!--Sezione HERO-->
-      <div class="container mt-4">
+      <div class="container mt-5 pt-2">
         <div class="row immagineHero boxShadow">
           <div class="col-12 text-center text-white my-auto textShadow">
             <p><strong>L'UNICA. LA SOLA.</strong></p>
-            <h1>PIZZERIA DA OMBRA</h1>
+            <h1 id="titolo">PIZZERIA DA OMBRA</h1>
             <p>Una pizza fatta da cani</p>
             <button
               type="button"
@@ -275,14 +276,15 @@
     <section id="Galleria">
       <!--Galleria-->
       <div class="container">
-        <div class="row my-5 py-5">
-          <div class="col-12 mt-5">
+        <div class="row mt-5 pt-5">
+          <div class="col-7 mt-5">
             <h3 class="txtMedio">LA GALLERIA</h3>
             <h2 class="txtGrande">
-              ABBIAMO FATTO SCODINZOLARE<br />
-              MOLTI CLIENTI CON LE NOSTRE PIZZE
+              ABBIAMO FATTO SCODINZOLARE MOLTI CLIENTI CON LE NOSTRE PIZZE
             </h2>
           </div>
+        </div>
+        <div class="row">
           <div class="col-12 col-md-6 col-lg-4 mt-3">
             <img
               class="galleriaIMG"
@@ -325,15 +327,12 @@
     </section>
     <section class="my-5 py-5">
       <!--Sezione Citazione-->
-      <div class="container my-5 py-5">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h3 class="txtGrande2">
-              AGUZZA I DENTI <br />
-              È L'ORA DELLA PAPPA
-            </h3>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-7 mx-auto text-center">
+            <h3 class="txtGrande2 cit">AGUZZA I DENTI È L'ORA DELLA PAPPA</h3>
             <div class="line"></div>
-            <h4 class="dimTXT">Ombra Tonina</h4>
+            <h4 class="dimTXT citP">Ombra Tonina</h4>
           </div>
         </div>
       </div>
@@ -344,15 +343,17 @@
         <div class="row">
           <div class="col-12 col-md-6 col-lg-8 my-5 py-5 ps-5 pe-3 fade-in-up">
             <div class="txtForm">
-              <h4 class="txtMedio">RISERVA PER IL BRANCO</h4>
-              <h3 class="txtGrande">PRENOTA UNA CIOTOLA</h3>
-              <p>
+              <h4 id="txt1" class="txtMedio">RISERVA PER IL BRANCO</h4>
+              <h3 id="txt2" class="txtGrande">PRENOTA UNA CIOTOLA</h3>
+              <p id="txt3">
                 Avvio e affianco imprenditori emergenti nel mondo della
                 caffetteria e del bartending.
               </p>
-              <div class="row">
+            </div>
+            <form action="">
+              <div id="form" class="row txtForm">
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <div>NOME</div>
+                  <label>NOME</label>
                   <input
                     id="name"
                     class="input-text"
@@ -361,7 +362,7 @@
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <div>COGNOME</div>
+                  <label>COGNOME</label>
                   <input
                     id="surname"
                     class="input-text"
@@ -370,7 +371,7 @@
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <div>CELLULARE</div>
+                  <label>CELLULARE</label>
                   <input
                     id="mobile"
                     class="input-text"
@@ -379,7 +380,7 @@
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <div>IN QUANTI</div>
+                  <label>IN QUANTI</label>
                   <input
                     id="people"
                     class="input-text"
@@ -388,7 +389,7 @@
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <div>GIORNO</div>
+                  <label>GIORNO</label>
                   <input
                     id="date"
                     class="input-text"
@@ -397,7 +398,7 @@
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <div>TURNO</div>
+                  <label>TURNO</label>
                   <input
                     id="turn"
                     class="input-text"
@@ -406,7 +407,7 @@
                   />
                 </div>
                 <div class="col-12">
-                  <div>MESSAGGIO</div>
+                  <label>MESSAGGIO</label>
                   <textarea
                     id="message"
                     placeholder="Messaggio che ignoreremo"
@@ -420,8 +421,13 @@
                   </label>
                 </div>
 
-                <div class="col-12 mb-5">
-                  <button type="button" onclick="formSubmit()" class="btn mt-4">
+                <!-- <div class="col-12 mb-5">
+                  <button
+                    type="button"
+                    value="Submit"
+                    onclick="formSubmit()"
+                    class="btn mt-4"
+                  >
                     <span class="d-block btn-text">INVIA</span>
                   </button>
 
@@ -446,15 +452,15 @@
                   >
                     Grazie! La tua ciotola ti aspetta! Bauuu
                   </div>
-                </div>
+                </div> -->
               </div>
-            </div>
+            </form>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 m-0 p-0">
+          <div id="mappa" class="col-12 col-md-6 col-lg-4 m-0 p-0">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.2691311523017!2d12.647796976442892!3d42.
-              88826820156712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e8e4f3607c5f1%3A0xf1e70441b5f8f16a!2s
-              Tordoni%20Bar%20Tabaccheria!5e0!3m2!1sit!2sit!4v1745589129615!5m2!1sit!2sit"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3295.2486469850924!2d11.290684793231407!3d46.
+            0119353052687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47789ec8828fb625%3A0xf091993dc6972b08!2sSpiaggia%20pubblica%20di%20Levico
+            !5e0!3m2!1sit!2sit!4v1746374918614!5m2!1sit!2sit"
               width="100%"
               height="100%"
               style="border: 0"
@@ -481,9 +487,9 @@
           <div class="col-12 col-md-6 col-lg-3">
             <h5>CONTATTI</h5>
             <p>
-              Prenota al Num: 113<br />
+              Prenota al Num: +39 333 4445556<br />
               Prima Mail: email@example.com<br />
-              Se Stai Male al: 118<br />
+              econdo numero: +39 333 4445556<br />
               Seconda Mail: email@example.com
             </p>
           </div>
@@ -491,7 +497,10 @@
             <h5>SOCIAL</h5>
             <p>
               Instagram:
-              <a href="https://www.instagram.com/x_giove/" style="color: red"
+              <a
+                href="https://www.instagram.com/x_giove/"
+                class="linkS"
+                style="color: red"
                 >x_giove</a
               ><br />
               Facebook: <br />
@@ -502,11 +511,79 @@
             <h5>CREDITS</h5>
             <p>
               Nome del Brand © 2024 <br />
-              Ricopiato con Ctrl+C da Giove
+              Ricopiato con <b id="easter" class="Egg">Ctrl+C</b> da Giove
             </p>
+            <button
+              id="btnVideo"
+              onclick="mettiVideo()"
+              class="btn mt-5 btnNascosto"
+            >
+              Non Cliccare
+            </button>
           </div>
         </div>
       </div>
     </footer>
+    <audio id="videoSound" src="tf_nemesis.mp3"></audio>
+    <script>
+      function mettiVideo() {
+        const video = document.getElementById("form");
+        video.innerHTML =
+          '<iframe width="600px" height="700px" src="https://www.youtube.com/embed/SxczvqJNojQ?si=-d9wZ9_ADS2uZzak" title="Teknologia" frameborder="0" allow="accelerometer; autoplay = yes; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        const scorriSU = document.getElementById("Prenota");
+        scorriSU.scrollIntoView({ behavior: "smooth" });
+        const audio = document.getElementById("videoSound");
+        audio.play();
+
+        const contenitore = document.createElement("div");
+        contenitore.className = "col-12 col-md-6 col-lg-4 m-0 p-0";
+
+        const immagine = document.createElement("img");
+        immagine.src = "oynqiuq4a9k51.jpg";
+        immagine.alt = "Immagine statica";
+        immagine.style.width = "100%";
+        immagine.style.height = "100%";
+        immagine.style.objectFit = "cover";
+
+        contenitore.appendChild(immagine);
+        mappa.parentNode.replaceChild(contenitore, mappa);
+
+        document.getElementById("txt1").textContent = "";
+        document.getElementById("txt2").textContent = "Ti avevo avvisato";
+        document.getElementById("txt3").textContent = "";
+      }
+    </script>
+    <audio
+      id="easterSound"
+      src="1743703072-y2matevideo-320kbps-bombardino-crocodilo-brainrot-brainrotai_eAmQCBpw.mp3"
+    ></audio>
+    <audio
+      id="clickSound"
+      src="wah-wah-sad-trombone-6347.mp3"
+      preload="auto"
+    ></audio>
+    <script>
+      document.getElementById("easter").onclick = function () {
+        this.classList.toggle("attivato");
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.querySelector(".immagineHero").style.backgroundImage =
+          "url('https://cdn-0001.qstv.on.epicgames.com/DeWFZjGciBtKpknWZf/image/landscape_comp.jpeg')";
+        document.getElementById("titolo").textContent = "Bombariro Crocodilo";
+        const audio = document.getElementById("easterSound");
+        audio.play();
+      };
+    </script>
+    <script>
+      const clickSound = document.getElementById("clickSound");
+      const bottoni = document.querySelectorAll("button:not(#btnVideo)");
+      bottoni.forEach((bottone) => {
+        bottone.addEventListener("click", () => {
+          clickSound.play();
+        });
+      });
+    </script>
   </body>
 </html>

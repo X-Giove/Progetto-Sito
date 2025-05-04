@@ -5,7 +5,11 @@
   min-height: 90vh;
   border-radius: 20px;
 }
-
+.nav-bar{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
 .textShadow {
   text-shadow: -2px 2px 3px #000000;
 }
@@ -86,7 +90,7 @@
 }
 
 .btn:active {
-  animation: explode 0.5s forwards;
+  animation: explode 0.2s forwards;
 }
 @keyframes pulse {
   0% {
@@ -129,7 +133,7 @@
   font-size: 30px;
 }
 .txtGrande2 {
-  font-size: 90px;
+  font-size: 80px;
 }
 .txtForm {
   color: white;
@@ -153,7 +157,7 @@
   color: white;
 }
 .txtGrande {
-  font-size: 40px;
+  font-size: 35px;
 }
 .txtMedio {
   font-size: 25px;
@@ -190,4 +194,65 @@ textarea {
 textarea:focus {
   border-bottom-color: #858b91;
 }
-
+@keyframes explodeTxT {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.5);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.cit:hover{
+  color: white;
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+  animation: explodeTxT 0.7s forwards;
+}
+.citP:hover{
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+  animation: explodeTxT 0.7s forwards;
+}
+.linkS:hover{
+  background-color: transparent;
+  text-shadow: 0 0 7px rgb(0, 0, 0);
+  animation: explodeTxT 1s infinite;
+}
+@keyframes Egg {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.5);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Egg {
+  cursor: pointer;
+}
+.attivato {
+  color: red;
+  font-weight: bold;
+}
+.btnNascosto{
+  background-color: black;
+  color: black;
+  border-color: black;
+}
+.btnNascosto:hover {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  background-color: black;
+}
