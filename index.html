@@ -84,9 +84,9 @@
       <div class="container mt-5 pt-2">
         <div class="row immagineHero boxShadow it-dark it-overlay">
           <div class="col-12 text-center text-white my-auto textShadow">
-            <p><strong>L'UNICA. LA SOLA.</strong></p>
+            <p id="titolo2"><strong>L'UNICA. LA SOLA.</strong></p>
             <h1 id="titolo">PIZZERIA DA OMBRA</h1>
-            <p>Una pizza fatta da cani</p>
+            <p id="titolo3">Una pizza fatta da cani</p>
             <button
               type="button"
               class="btn btn-light"
@@ -571,7 +571,9 @@
         document.body.style.color = "white";
         document.querySelector(".immagineHero").style.backgroundImage =
           "url('https://cdn-0001.qstv.on.epicgames.com/DeWFZjGciBtKpknWZf/image/landscape_comp.jpeg')";
-        document.getElementById("titolo").textContent = "Bombariro Crocodilo";
+        document.getElementById("titolo").textContent = "Bombardiro Crocodilo";
+        document.getElementById("titolo2").textContent = "L'unico. Il solo.";
+        document.getElementById("titolo3").textContent = "";
         const audio = document.getElementById("easterSound");
         audio.play();
       };
