@@ -79,12 +79,14 @@
         </div>
       </nav>
     </header>
+    <!--Sezione HERO-->
     <section id="Home">
-      <!--Sezione HERO-->
       <div class="container mt-5 pt-2">
         <div class="row immagineHero boxShadow it-dark it-overlay">
-          <div class="col-12 text-center text-white my-auto textShadow">
-            <p id="titolo2"><strong>L'UNICA. LA SOLA.</strong></p>
+          <div
+            class="col-12 text-center text-white my-auto textShadow txt-bnt-up-hero"
+          >
+            <p id="titolo2" class="titolo-hero">L'UNICA. LA SOLA.</p>
             <h1 id="titolo">PIZZERIA DA OMBRA</h1>
             <p id="titolo3">Una pizza fatta da cani</p>
             <button
@@ -350,12 +352,12 @@
                 caffetteria e del bartending.
               </p>
             </div>
-            <form action="">
-              <div id="form" class="row txtForm">
+            <form id="form" action="">
+              <div class="row txtForm" id="x">
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                   <label>NOME</label>
                   <input
-                    id="name"
+                    id="nome"
                     class="input-text"
                     type="text"
                     placeholder="Mario"
@@ -364,7 +366,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                   <label>COGNOME</label>
                   <input
-                    id="surname"
+                    id="cognome"
                     class="input-text"
                     type="text"
                     placeholder="Rossi"
@@ -373,16 +375,16 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                   <label>CELLULARE</label>
                   <input
-                    id="mobile"
+                    id="numero"
                     class="input-text"
                     type="text"
-                    placeholder="113"
+                    placeholder="333 4445550"
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                   <label>IN QUANTI</label>
                   <input
-                    id="people"
+                    id="numclienti"
                     class="input-text"
                     type="text"
                     placeholder="Minimo 10"
@@ -391,37 +393,37 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                   <label>GIORNO</label>
                   <input
-                    id="date"
+                    id="giorno"
                     class="input-text"
                     type="text"
                     placeholder="Siamo chiusi"
                   />
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  <label>TURNO</label>
+                  <label>ORARIO</label>
                   <input
-                    id="turn"
+                    id="ora"
                     class="input-text"
                     type="text"
-                    placeholder="Tanto non entri"
+                    placeholder="Siamo pieni"
                   />
                 </div>
                 <div class="col-12">
                   <label>MESSAGGIO</label>
                   <textarea
-                    id="message"
+                    id="messaggio"
                     placeholder="Messaggio che ignoreremo"
-                    name=""
+                    
                   ></textarea>
 
                   <label for="" class="mt-4">
-                    <input type="checkbox" name="policy" id="" />
+                    <input type="checkbox"  id="consenso" />
                     Dichiaro di aver letto e accettato la Privacy Policy del
                     sito.
                   </label>
                 </div>
 
-                 <div class="col-12 mb-5">
+                <div class="col-12 mb-5">
                   <button
                     type="button"
                     value="Submit"
@@ -430,28 +432,6 @@
                   >
                     <span class="d-block btn-text">INVIA</span>
                   </button>
-
-                  <div
-                    id="loading"
-                    class="alert alert-warning mt-3 d-none"
-                    role="alert"
-                  >
-                    Attendere prego...
-                  </div>
-                  <div
-                    id="error"
-                    class="alert alert-danger mt-3 d-none"
-                    role="alert"
-                  >
-                    Si è verificato un errore
-                  </div>
-                  <div
-                    id="success"
-                    class="alert alert-success mt-3 d-none"
-                    role="alert"
-                  >
-                    Grazie! La tua ciotola ti aspetta! Bauuu
-                  </div>
                 </div>
               </div>
             </form>
@@ -513,79 +493,13 @@
               Nome del Brand © 2024 <br />
               Ricopiato con <b id="easter" class="Egg">Ctrl+C</b> da Giove
             </p>
-            <button
-              id="btnVideo"
-              onclick="mettiVideo()"
-              class="btn mt-5 btnNascosto"
-            >
+            <button id="btnVideo" class="btn mt-5 btnNascosto">
               Non Cliccare
             </button>
           </div>
         </div>
       </div>
     </footer>
-    <audio id="videoSound" src="tf_nemesis.mp3"></audio>
-    <script>
-      function mettiVideo() {
-        const video = document.getElementById("form");
-        video.innerHTML =
-          '<iframe width="600px" height="700px" src="https://www.youtube.com/embed/SxczvqJNojQ?si=-d9wZ9_ADS2uZzak" title="Teknologia" frameborder="0" allow="accelerometer; autoplay = yes; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        const scorriSU = document.getElementById("Prenota");
-        scorriSU.scrollIntoView({ behavior: "smooth" });
-        const audio = document.getElementById("videoSound");
-        audio.play();
-
-        const contenitore = document.createElement("div");
-        contenitore.className = "col-12 col-md-6 col-lg-4 m-0 p-0";
-
-        const immagine = document.createElement("img");
-        immagine.src = "oynqiuq4a9k51.jpg";
-        immagine.alt = "Immagine statica";
-        immagine.style.width = "100%";
-        immagine.style.height = "100%";
-        immagine.style.objectFit = "cover";
-
-        contenitore.appendChild(immagine);
-        mappa.parentNode.replaceChild(contenitore, mappa);
-
-        document.getElementById("txt1").textContent = "";
-        document.getElementById("txt2").textContent = "Ti avevo avvisato";
-        document.getElementById("txt3").textContent = "";
-      }
-    </script>
-    <audio
-      id="easterSound"
-      src="1743703072-y2matevideo-320kbps-bombardino-crocodilo-brainrot-brainrotai_eAmQCBpw.mp3"
-    ></audio>
-    <audio
-      id="clickSound"
-      src="wah-wah-sad-trombone-6347.mp3"
-      preload="auto"
-    ></audio>
-    <script>
-      document.getElementById("easter").onclick = function () {
-        this.classList.toggle("attivato");
-
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        document.querySelector(".immagineHero").style.backgroundImage =
-          "url('https://cdn-0001.qstv.on.epicgames.com/DeWFZjGciBtKpknWZf/image/landscape_comp.jpeg')";
-        document.getElementById("titolo").textContent = "Bombardiro Crocodilo";
-        document.getElementById("titolo2").textContent = "L'unico. Il solo.";
-        document.getElementById("titolo3").textContent = "";
-        const audio = document.getElementById("easterSound");
-        audio.play();
-      };
-    </script>
-    <script>
-      const clickSound = document.getElementById("clickSound");
-      const bottoni = document.querySelectorAll("button:not(#btnVideo)");
-      bottoni.forEach((bottone) => {
-        bottone.addEventListener("click", () => {
-          clickSound.play();
-        });
-      });
-    </script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

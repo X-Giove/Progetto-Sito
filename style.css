@@ -1,10 +1,11 @@
 .immagineHero {
-  background-image: url("hero.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("hero.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
   border-radius: 20px;
-  position: relative; /* Serve per posizionare il ::before */
+  position: relative;
   overflow: hidden;
 }
 .immagineHero::before {
@@ -14,11 +15,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Opacità dell'overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   z-index: 1;
 }
-.immagineHero .textShadow {
+.immagineHero {
   position: relative;
   z-index: 2;
 }
@@ -27,10 +28,28 @@
     background-position: center center !important;
   }
 }
-.nav-bar{
+.txt-bnt-up-hero{
+  z-index: 3;
+}
+.titolo-hero{
+  font-size: 20px;
+}
+.nav-pos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 12000;
+}
+.nav-bar {
   position: fixed;
   right: 0;
-  top: 0;
+}
+@media (max-width: 991px) {
+  .nav-bar {
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(52, 58, 64);
+  }
 }
 .textShadow {
   text-shadow: -2px 2px 3px #000000;
@@ -77,13 +96,6 @@
 .backGround {
   background-color: #212121;
 }
-.nav-pos {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 12000;
-}
 .galleriaIMG {
   width: 100%;
   height: 100%;
@@ -94,15 +106,14 @@
   color: black;
   padding: 18px 30px;
   font-size: 20px;
-  border: 2px solid beige; 
+  border: 2px solid beige;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 1px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
 .btn:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   animation: pulse 1s infinite;
@@ -110,7 +121,6 @@
   color: rgb(255, 255, 255);
   text-shadow: 0 0 2px rgb(0, 0, 0);
 }
-
 .btn:active {
   animation: explode 0.2s forwards;
 }
@@ -199,7 +209,6 @@
     transform: translateY(0);
   }
 }
-
 .fade-in-up {
   opacity: 0;
   animation: fadeInUp 1s ease forwards;
@@ -216,7 +225,6 @@ textarea {
   color: white;
   transition: border-color 0.3s;
   outline: none;
-  
 }
 textarea:focus {
   border-bottom-color: #858b91;
@@ -236,17 +244,17 @@ textarea:focus {
     transform: scale(1);
   }
 }
-.cit:hover{
+.cit:hover {
   color: white;
   text-shadow: 0 0 7px rgb(0, 0, 0);
   animation: explodeTxT 0.7s forwards;
 }
-.citP:hover{
+.citP:hover {
   color: rgb(255, 0, 0);
   text-shadow: 0 0 7px rgb(0, 0, 0);
   animation: explodeTxT 0.7s forwards;
 }
-.linkS:hover{
+.linkS:hover {
   background-color: transparent;
   text-shadow: 0 0 7px rgb(0, 0, 0);
   animation: explodeTxT 1s infinite;
@@ -273,7 +281,7 @@ textarea:focus {
   color: red;
   font-weight: bold;
 }
-.btnNascosto{
+.btnNascosto {
   background-color: black;
   color: black;
   border-color: black;
