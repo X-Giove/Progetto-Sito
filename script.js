@@ -85,16 +85,15 @@ const suonoForm = new Audio("successo.mp3");
 
 //-------------------DATABASE-------------------------
 
-// Firebase Config compat (usa compat con firestore-compat)
-const firebaseConfig = {
-  apiKey: "AIzaSyBHsVz47vSxmT8crAgK93qRSYquTc_G4z0",
-  authDomain: "database-progetto-5d7f1.firebaseapp.com",
-  projectId: "database-progetto-5d7f1",
-  storageBucket: "database-progetto-5d7f1.appspot.com",
-  messagingSenderId: "70773662195",
-  appId: "1:70773662195:web:fd1af8f1e8272e34f75266",
-};
-
+// Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDCBxIfeCIzp7dRU8HMdaEqAk7XxsgAUKc",
+    authDomain: "database-progetto-5d7f1.firebaseapp.com",
+    projectId: "database-progetto-5d7f1",
+    storageBucket: "database-progetto-5d7f1.firebasestorage.app",
+    messagingSenderId: "707736621954",
+    appId: "1:707736621954:web:d850e80c3aacfbf8dc759b"
+  };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
